@@ -11,7 +11,7 @@ enum LogLevel {
     Debug = 'DEBUG',
 }
 
-class JsonLogger extends DefaultLogger {
+export class JsonLogger extends DefaultLogger {
     log(...args: any[]) {
         this.printJson(LogLevel.Info, args);
     }
